@@ -1,0 +1,4 @@
+Given user is logged or no
+When user navigates in main page
+Then push any button on top (home,contact,about us,cart,log in, sign up)
+And go to the selected page
