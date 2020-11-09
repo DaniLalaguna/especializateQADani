@@ -1,0 +1,26 @@
+Feature: Product store MAIN PAGE 1
+
+	@TEST_PS-51 @TESTSET_PS-45
+	Scenario: User can check main page top elements
+		Given user is logged or no
+		When user navigates in main page
+		Then push any button on top (home,contact,about us,cart,log in, sign up)
+		And go to the selected page
+	@TEST_PS-68 @TESTSET_PS-45
+	Scenario: User checks categories on main page
+		Given user is logged or not
+		When user goes to Category List in main page
+		Then push button LAPTOP, PHONES, MONITORS
+		And see a filter of the selected category
+	@TEST_PS-69 @TESTSET_PS-45
+	Scenario: User see all products with pagination
+		Given user is logged or not
+		When user goes to pagination
+		Then push the number of page
+		And visualize page
+	@TEST_PS-70 @TESTSET_PS-45
+	Scenario: User see display carrousel
+		Given user is logged or not
+		When user goes to display carrousel
+		Then push button Next or Previus
+		And visualize images
